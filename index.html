@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Resources/bootstrap.min 4.3.1.css">
+  <link rel="stylesheet" href="Resources/w3.css">
+  <script src="Resources/bootstrap.min 4.3.1.js"></script>
+  <script src="Resources/jquery.min 3.3.1.js"></script>
+  <script src="Resources/popper.min 1.14.7.js"></script>
+  <script src="javascript.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+<body id="home">
+
+  <!-- * PAGE CONTENT -->
+  <div class="w3-animate-opacity" style="max-width:auto">
+
+    <!-- Header -->
+    <div class="bgimg w3-display-container">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide"><span
+            class="w3-hide-small">Photographer</span> Name</span>
+      </div>
+    </div>
+
+    <!-- * Nav-Bar Empty Space -->
+
+    <div class="w3-top w3-dark-grey w3-opacity-min">
+      <i class="w3-hover-opacity w3-row w3-padding"></i>
+    </div>
+
+    <!-- * Nav-Bar Content -->
+
+    <div class="w3-top">
+      <div id="openSidebar" class="w3-button w3-container w3-hover-none w3-xxlarge w3-display-topleft fa fa-bars">
+      </div>
+      <div class="w3-right">
+        <i onclick="facebookLink()"
+          class="fa fa-facebook-official w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
+        <i class="fa fa-reddit w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
+      </div>
+    </div>
+
+    <div class="w3-light-grey w3-sidebar w3-bar-block w3-display-topleft" style="display:none" id="sidebar">
+      <button id="closeSidebar" class="w3-hover-none w3-bar-item w3-button w3-large w3-padding-16 fa fa-close"></button>
+      <a style="text-decoration: none" href="#photos"
+        class="w3-hover-none w3-bar-item w3-button w3-padding w3-wide">Photos</a>
+      <a style="text-decoration: none" href="#about"
+        class="w3-hover-none w3-bar-item w3-button w3-padding w3-wide">About</a>
+      <a style="text-decoration: none" href="#contact"
+        class="w3-hover-none w3-bar-item w3-button w3-padding w3-wide">Contact</a>
+    </div>
+
+    <!-- * Lines -->
+    <div style="padding-top: 2%" class="w3-container w3-opacity">
+      <svg width="auto" height="100">
+        <g stroke="black" stroke-width="0.8">
+          <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- * Offers -->
+    <div class="w3-container">
+      <div class="w3-center w3-padding-64">
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What You Offer</span>
+      </div>
+      <div class="blue w3-container w3-padding-32">
+        <div class="w3-row">
+          <div class="w3-container w3-third">
+            <h5 class="w3-topbar w3-bottombar w3-padding-16 w3-border-light-green">Offer 1</h5>
+            <p>Description</p>
+            <p>Description</p>
+            <p>Description</p>
+          </div>
+          <div class="w3-container w3-third">
+            <h5 class="w3-topbar w3-bottombar w3-padding-16 w3-border-light-green">Offer 2</h5>
+            <p>Description</p>
+            <p>Description</p>
+            <p>Description</p>
+          </div>
+          <div class="w3-container w3-third">
+            <h5 class="w3-topbar w3-bottombar w3-padding-16 w3-border-light-green">Offer 3</h5>
+            <p>Description</p>
+            <p>Description</p>
+            <p>Description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * Lines -->
+    <div style="padding-top: 2%" class="w3-container w3-opacity">
+      <svg width="auto" height="100">
+        <g stroke="black" stroke-width="0.8">
+          <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- * Second Parallax Image with Portfolio Text -->
+    <div class="bgimg2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+      </div>
+    </div>
+
+    <!-- * Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+      <!-- * Left and Right Text -->
+      <div style="clear: both" class="w3-wide w3-container">
+        <p id="alignleft">My</p>
+        <p id="alignright">Work</p>
+      </div>
+      <h3 class="w3-center">YOUR WORK</h3>
+      <p class="w3-center"><em>Description</em></p><br>
+
+      <!-- * Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+        <div class="w3-col m4">
+          <img src="Photos/photo5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            alt="Descripton 1">
+        </div>
+
+        <div class="w3-col m4">
+          <img src="Photos/photo2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            alt="Descripton 2">
+        </div>
+
+        <div class="w3-col m4">
+          <img src="Photos/photo5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            alt="Descripton 3">
+        </div>
+
+        <div class="w3-col m4">
+          <img src="Photos/photo4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            alt="Descripton 4">
+        </div>
+        <div class="w3-col m4">
+          <img src="Photos/photo5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            alt="Descripton 5">
+        </div>
+
+        <div class="w3-col m4">
+          <img src="Photos/photo2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+            alt="Descripton 6">
+        </div>
+      </div>
+    </div>
+
+    <!-- * Modal for full size images on click -->
+    <div id="modalgallery" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+          class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="galleryimgs" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- * Lines -->
+    <div style="padding: 2%" class="w3-container w3-opacity">
+      <svg width="auto" height="100">
+        <g stroke="black" stroke-width="0.8">
+          <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- * Slideshow -->
+    <h2 class="w3-center">Slideshow</h2>
+    <div class="w3-content w3-section" style="max-width:auto">
+      <img class="slides w3-animate-left" src="Photos/photo5.jpg" style="width:100%">
+      <img class="slides w3-animate-right" src="Photos/photo2.jpg" style="width:100%">
+      <img class="slides w3-animate-top" src="Photos/photo3.jpg" style="width:100%">
+      <img class="slides w3-animate-bottoms" src="Photos/photo2.jpg" style="width:100%">
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!-- * Lines -->
+    <div style="padding: 2%" class="w3-container w3-opacity">
+      <svg width="auto" height="100">
+        <g stroke="black" stroke-width="0.8">
+          <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- * Pricing -->
+    <div class="w3-row-padding" id="plans">
+      <div class="w3-center w3-padding">
+        <h3>Pricing Plans</h3>
+        <p>Choose a pricing plan that fits your needs.</p>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-deep-purple w3-xlarge w3-padding-32">Normal Pack</li>
+          <li class="w3-padding-16"><b>10 Veritcal</b> Photos</li>
+          <li class="w3-padding-16"><b>10 Orizontal</b> Photos</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$10</h2>
+            <span class="w3-opacity">per pack</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-dark-grey w3-padding-large">Purchase</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-deep-purple w3-xlarge w3-padding-32">Medium Pack</li>
+          <li class="w3-padding-16"><b>25 Vertical</b> Photos</li>
+          <li class="w3-padding-16"><b>25 Orizontal</b> Photos</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$25</h2>
+            <span class="w3-opacity">per pack</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-dark-grey w3-padding-large">Purchase</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-deep-purple w3-xlarge w3-padding-32">Premium Pack</li>
+          <li class="w3-padding-16"><b>50 Vertical</b> Photos</li>
+          <li class="w3-padding-16"><b>50 Orizontal</b> Photos</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$50</h2>
+            <span class="w3-opacity">per pack</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-dark-grey w3-padding-large">Purchase</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- * Lines -->
+    <div style="padding-top: 2%" class="w3-container w3-opacity">
+      <svg width="auto" height="100">
+        <g stroke="black" stroke-width="0.8">
+          <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- * Contact -->
+    <div class="w3-center w3-padding-64" id="contact">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact</span>
+    </div>
+
+    <form class="w3-container" action="/action_page.php" target="_blank">
+      <div class="w3-section w3-container">
+        <label>Name</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+      </div>
+      <div class="w3-section w3-container">
+        <label>Email</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+      </div>
+      <div class="w3-section w3-container">
+        <label>Subject</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+      </div>
+      <div class="w3-section w3-container">
+        <label>Message</label>
+        <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+      </div>
+      <div style="padding-bottom: 1%" class="w3-container"><button style="width:10%;" type="submit"
+          class="w3-text-white w3-button w3-block w3-indigo w3-right w3-round-large w3-hover-dark-grey">Send</button>
+      </div>
+    </form>
+
+    <!-- * Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+      <p>Made by <a href="https://www.facebook.com/ionut.popa90" target="_blank" class="w3-hover-text-green">I O N</a>
+      </p>
+    </footer>
+
+</body>
+
+</html>

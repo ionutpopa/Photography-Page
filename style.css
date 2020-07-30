@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1 {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    letter-spacing: 5px
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+
+#alignleft {
+    float: left;
+}
+
+#alignright {
+    float: right;
+}
+
+.sidebar-hidden {
+    display: none;
+}
+
+#openSidebar {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+}
+
+.bgimg, .bgimg2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg2 {
+    background-image: url("Photos/photo2.jpg");
+    min-height: 400px;
+}
+
+.bgimg {
+    margin: 0;
+    background-image: url('Photos/photo2.jpg');
+    width: 100%;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 4000px) {
+    .bgimg {
+        background-attachment: scroll;
+        min-height: 100vh;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.slides {
+    display: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.blue {
+    background-color: rgba(60, 7, 121, 0.747);
+    color: rgb(255, 255, 255);
+}
