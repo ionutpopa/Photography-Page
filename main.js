@@ -1,7 +1,3 @@
-function facebookLink() {
-  window.open("http://www.facebook.com", "_blank");
-}
-
 $(document).ready(function () {
   $("#openSidebar").click(function (e) {
     e.stopPropagation();
@@ -18,14 +14,10 @@ $(document).ready(function () {
 
 });
 
-// Modal Image Gallery
+// Image Gallery
 function onClick(element) {
   document.getElementById("galleryimgs").src = element.src;
   document.getElementById("modalgallery").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
-/*
-! Invata Vanila Javascript!
-*/

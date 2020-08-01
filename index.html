@@ -9,7 +9,7 @@
   <script src="Resources/bootstrap.min 4.3.1.js"></script>
   <script src="Resources/jquery.min 3.3.1.js"></script>
   <script src="Resources/popper.min 1.14.7.js"></script>
-  <script src="javascript.js"></script>
+  <script src="main.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -20,32 +20,17 @@
   <!-- * PAGE CONTENT -->
   <div class="w3-animate-opacity" style="max-width:auto">
 
-    <!-- Header -->
-    <div class="bgimg w3-display-container">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-        <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide"><span
-            class="w3-hide-small">Photographer</span> Name</span>
-      </div>
-    </div>
-
-    <!-- * Nav-Bar Empty Space -->
-
+    <!-- * Nav Bar -->
     <div class="w3-top w3-dark-grey w3-opacity-min">
-      <i class="w3-hover-opacity w3-row w3-padding"></i>
-    </div>
-
-    <!-- * Nav-Bar Content -->
-
-    <div class="w3-top">
-      <div id="openSidebar" class="w3-button w3-container w3-hover-none w3-xxlarge w3-display-topleft fa fa-bars">
-      </div>
-      <div class="w3-right">
+      <div class="w3-right nav content">
+        <span id="openSidebar" class="w3-button w3-display-topleft fa fa-bars bars">
+        </span>
         <i onclick="facebookLink()"
-          class="fa fa-facebook-official w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
-        <i class="fa fa-instagram w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
-        <i class="fa fa-snapchat w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
-        <i class="fa fa-reddit w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-row w3-padding w3-padding-16"></i>
+          class="fa fa-facebook-official w3-hover-opacity w3-row w3-padding w3-padding-16 nav-content"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-row w3-padding w3-padding-16 nav-content"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-row w3-padding w3-padding-16 nav-content"></i>
+        <i class="fa fa-reddit w3-hover-opacity w3-row w3-padding w3-padding-16 nav-content"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-row w3-padding w3-padding-16 nav-content"></i>
       </div>
     </div>
 
@@ -59,9 +44,17 @@
         class="w3-hover-none w3-bar-item w3-button w3-padding w3-wide">Contact</a>
     </div>
 
+     <!-- Header -->
+     <div class="bgimg w3-display-container">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide"><span
+            class="w3-hide-small">Photographer</span> Name</span>
+      </div>
+    </div>
+
     <!-- * Lines -->
     <div style="padding-top: 2%" class="w3-container w3-opacity">
-      <svg width="auto" height="100">
+      <svg width="100%" height="100">
         <g stroke="black" stroke-width="0.8">
           <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
         </g>
@@ -69,26 +62,26 @@
     </div>
 
     <!-- * Offers -->
-    <div class="w3-container">
+    <div>
       <div class="w3-center w3-padding-64">
         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What You Offer</span>
       </div>
-      <div class="blue w3-container w3-padding-32">
+      <div class="blue w3-center w3-container w3-padding-32">
         <div class="w3-row">
           <div class="w3-container w3-third">
-            <h5 class="w3-topbar w3-bottombar w3-padding-16 w3-border-light-green">Offer 1</h5>
+            <h5 class="offers w3-padding-16">Offer 1</h5>
             <p>Description</p>
             <p>Description</p>
             <p>Description</p>
           </div>
           <div class="w3-container w3-third">
-            <h5 class="w3-topbar w3-bottombar w3-padding-16 w3-border-light-green">Offer 2</h5>
+            <h5 class="offers w3-padding-16">Offer 2</h5>
             <p>Description</p>
             <p>Description</p>
             <p>Description</p>
           </div>
           <div class="w3-container w3-third">
-            <h5 class="w3-topbar w3-bottombar w3-padding-16 w3-border-light-green">Offer 3</h5>
+            <h5 class="offers w3-padding-16">Offer 3</h5>
             <p>Description</p>
             <p>Description</p>
             <p>Description</p>
@@ -99,7 +92,7 @@
 
     <!-- * Lines -->
     <div style="padding-top: 2%" class="w3-container w3-opacity">
-      <svg width="auto" height="100">
+      <svg width="100%" height="100">
         <g stroke="black" stroke-width="0.8">
           <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
         </g>
@@ -169,7 +162,7 @@
 
     <!-- * Lines -->
     <div style="padding: 2%" class="w3-container w3-opacity">
-      <svg width="auto" height="100">
+      <svg width="100%" height="100">
         <g stroke="black" stroke-width="0.8">
           <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
         </g>
@@ -177,34 +170,27 @@
     </div>
 
     <!-- * Slideshow -->
-    <h2 class="w3-center">Slideshow</h2>
-    <div class="w3-content w3-section" style="max-width:auto">
+    <h2 class="w3-center">Simple Slideshow</h2>
+    <!-- <div class="w3-content w3-section" style="max-width:auto">
       <img class="slides w3-animate-left" src="Photos/photo5.jpg" style="width:100%">
       <img class="slides w3-animate-right" src="Photos/photo2.jpg" style="width:100%">
       <img class="slides w3-animate-top" src="Photos/photo3.jpg" style="width:100%">
       <img class="slides w3-animate-bottoms" src="Photos/photo2.jpg" style="width:100%">
+    </div> -->
+
+    <div class="slider" id="slider">
+      <figure>
+        <img class="w3-animate-left" src="Photos/photo5.jpg">
+        <img src="Photos/photo2.jpg">
+        <img src="Photos/photo3.jpg">
+        <img src="Photos/photo5.jpg">
+        <img src="Photos/photo2.jpg">
+      </figure>
     </div>
-
-    <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("slides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) { myIndex = 1 }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-    </script>
 
     <!-- * Lines -->
     <div style="padding: 2%" class="w3-container w3-opacity">
-      <svg width="auto" height="100">
+      <svg width="100%" height="100">
         <g stroke="black" stroke-width="0.8">
           <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
         </g>
@@ -269,7 +255,7 @@
 
     <!-- * Lines -->
     <div style="padding-top: 2%" class="w3-container w3-opacity">
-      <svg width="auto" height="100">
+      <svg width="100%" height="100">
         <g stroke="black" stroke-width="0.8">
           <path stroke-dasharray="5.6" stroke-linecap="round" d="M5 50 l2000 0" />
         </g>
